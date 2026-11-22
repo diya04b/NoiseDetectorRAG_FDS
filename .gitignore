@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Released and derived data stay local. Checksums are committed under data/manifests/.
+data/raw/
+data/interim/
+data/processed/
+
+logs/
+checkpoints/
+
+# Row-level detector predictions repeat the passage text, so they stay local.
+outputs/detector/*predictions.jsonl
+
+# Selection files repeat the passage text.
+outputs/selection/*passages.jsonl
+
+# RAG answer rows repeat the passage text.
+outputs/rag/answers.jsonl
