@@ -1,0 +1,40 @@
+# Settings for the RAG generator in Figure 1 of the report.
+# The detector is already trained. This step does not train it.
+# It answers each test question from a controlled context, then scores
+# Exact Match and token F1 against the gold answers.
+seed: 42
+split: test
+classification_path: data/processed/classification.jsonl
+# Used only for the detector_final condition (remove, then rerank).
+# The clean baseline and the individual noise conditions use gold labels.
+predictions_path: outputs/detector/test_predictions.jsonl
+output_dir: outputs/rag
+# extractive: a small reading-comprehension model (vanilla RAG reader).
+# overlap: no download. Returns the context sentence closest to the question.
+# Use overlap to check the pipeline. Use extractive for the report numbers.
+reader: extractive
+model_name: deepset/roberta-base-squad2
+device: cpu
+# Where the noisy passage is placed relative to the clean passage.
+# after: clean passage first, noise second.
+# before: noise first, clean passage second.
+noise_position: after
+# Also answer from the clean passage plus every pair of noise classes.
+# This is steps 7 and 8 of section 3.9. It multiplies the number of answers.
+pairwise: false
+# Contexts longer than this are cut from the end before the reader sees them.
+max_context_chars: 6000
+# Also answer from the passages the detector kept. Set false to skip that.
+# detector_final uses the same keep list as configs/selection.yaml:
+# drop harmful noise, keep beneficial noise, and place Relevant first.
+use_detector: true
+retrieve_k: 7
+keep_labels:
+  - Relevant
+  - Semantic Noise
+  - Datatype Noise
+  - Illegal-Sentence Noise
+keep_at_least: 1
+final_k: null
+bm25_k1: 1.5
+bm25_b: 0.75

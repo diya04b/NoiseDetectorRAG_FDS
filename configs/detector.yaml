@@ -1,0 +1,25 @@
+# Fine-tuning settings for the eight-class noise detector.
+# The report names RoBERTa-base or DeBERTa-v3-base. RoBERTa-base is the default.
+# To switch models, set model_name to microsoft/deberta-v3-base.
+seed: 42
+model_name: roberta-base
+# 512 is the longest sequence RoBERTa-base and DeBERTa-v3-base accept.
+# The question is kept. Extra passage tokens past this limit are cut.
+max_length: 512
+train_batch_size: 4
+eval_batch_size: 8
+gradient_accumulation_steps: 1
+epochs: 3
+learning_rate: 2.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.06
+max_grad_norm: 1.0
+# Stop if validation macro-F1 does not rise for this many epochs.
+# Set to null to always run every epoch.
+early_stopping_patience: 2
+# null uses every labelled row. A small integer keeps that many rows per class
+# in each split, which is only for a short practice run.
+limit_per_class: null
+classification_path: data/processed/classification.jsonl
+output_dir: outputs/detector
+checkpoint_dir: checkpoints/detector

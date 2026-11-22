@@ -1,0 +1,32 @@
+# Settings for the remove / rerank step in Figure 1 of the report.
+# This step does not train the detector. It reads the detector's labels
+# and turns a retrieved passage list into the final passage list.
+seed: 42
+split: test
+classification_path: data/processed/classification.jsonl
+# Saved detector rows. Produced by scripts/train_detector.py or
+# scripts/evaluate_detector.py. Leave the model unloaded unless --rescore.
+predictions_path: outputs/detector/test_predictions.jsonl
+checkpoint_dir: checkpoints/detector
+output_dir: outputs/selection
+# same_question: rank the passages already stored for that question.
+# Those passages are the controlled top-k set (one per noise class).
+pool: same_question
+# How many passages the retriever may hand to the detector.
+retrieve_k: 7
+# After reranking, keep at most this many passages. null keeps every
+# passage the rerank step did not drop.
+final_k: null
+# Remove keeps a passage only when the detector predicts one of these classes.
+keep_labels:
+  - Relevant
+  - Semantic Noise
+  - Datatype Noise
+  - Illegal-Sentence Noise
+# If remove would leave a question with fewer passages than this, keep the
+# best remaining passage so the final list is not empty.
+keep_at_least: 1
+bm25_k1: 1.5
+bm25_b: 0.75
+max_length: 512
+eval_batch_size: 8

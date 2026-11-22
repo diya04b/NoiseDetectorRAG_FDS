@@ -1,0 +1,30 @@
+# Compare unfiltered BM25 with the detector keep/remove rule.
+# Harmful noise is removed. Beneficial noise stays below the relevant passage.
+# The clean row is the relevant passage alone, so the gain can be read
+# against both the unfiltered list and the clean context.
+seed: 42
+split: test
+classification_path: data/processed/classification.jsonl
+predictions_path: outputs/detector/test_predictions.jsonl
+output_dir: outputs/rag_selective
+reader: extractive
+model_name: deepset/roberta-base-squad2
+device: cpu
+noise_position: after
+pairwise: false
+max_context_chars: 6000
+use_detector: true
+retrieve_k: 7
+keep_labels:
+  - Relevant
+  - Semantic Noise
+  - Datatype Noise
+  - Illegal-Sentence Noise
+bottom_labels:
+  - Semantic Noise
+  - Datatype Noise
+  - Illegal-Sentence Noise
+keep_at_least: 1
+final_k: null
+bm25_k1: 1.5
+bm25_b: 0.75
