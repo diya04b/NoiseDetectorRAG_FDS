@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "split": "test",
+  "classification_path": "data/processed/classification.jsonl",
+  "predictions_path": "outputs/detector/test_predictions.jsonl",
+  "output_dir": "outputs/rag",
+  "reader": "overlap",
+  "model_name": "deepset/roberta-base-squad2",
+  "device": "cpu",
+  "noise_position": "after",
+  "pairwise": false,
+  "max_context_chars": 6000,
+  "use_detector": false,
+  "retrieve_k": 7,
+  "keep_labels": [
+    "Relevant"
+  ],
+  "keep_at_least": 1,
+  "final_k": null,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75
+}

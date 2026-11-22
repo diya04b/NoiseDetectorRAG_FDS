@@ -1,0 +1,92 @@
+{
+  "split": "validation",
+  "n_examples": 400,
+  "n_correct": 398,
+  "named_confusions": [
+    {
+      "true_label": "Semantic Noise",
+      "predicted_label": "Supportive Noise",
+      "count": 0,
+      "support": 50,
+      "rate": 0.0
+    },
+    {
+      "true_label": "Supportive Noise",
+      "predicted_label": "Semantic Noise",
+      "count": 2,
+      "support": 50,
+      "rate": 0.04
+    },
+    {
+      "true_label": "Counterfactual Noise",
+      "predicted_label": "Prior Noise",
+      "count": 0,
+      "support": 50,
+      "rate": 0.0
+    },
+    {
+      "true_label": "Prior Noise",
+      "predicted_label": "Counterfactual Noise",
+      "count": 0,
+      "support": 50,
+      "rate": 0.0
+    }
+  ],
+  "top_confusions": [
+    {
+      "true_label": "Supportive Noise",
+      "predicted_label": "Semantic Noise",
+      "count": 2
+    }
+  ],
+  "per_class": [
+    {
+      "label": "Relevant",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Semantic Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Datatype Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Illegal-Sentence Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Counterfactual Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Supportive Noise",
+      "support": 50,
+      "n_correct": 48,
+      "n_wrong": 2
+    },
+    {
+      "label": "Orthographic Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Prior Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    }
+  ]
+}

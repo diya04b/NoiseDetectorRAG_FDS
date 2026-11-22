@@ -1,0 +1,87 @@
+{
+  "reader": "extractive",
+  "model_name": "deepset/roberta-base-squad2",
+  "split": "test",
+  "noise_position": "after",
+  "n_questions": 50,
+  "n_questions_with_clean": 50,
+  "n_questions_without_clean_skipped": 50,
+  "n_answers": 350,
+  "conditions": {
+    "clean": {
+      "n": 50,
+      "exact_match": 0.6,
+      "token_f1": 0.748722,
+      "mean_context_tokens": 133.52,
+      "mean_answer_tokens": 2.84,
+      "mean_latency_seconds": 1.606883
+    },
+    "Semantic Noise": {
+      "n": 50,
+      "exact_match": 0.58,
+      "token_f1": 0.724507,
+      "mean_context_tokens": 234.68,
+      "mean_answer_tokens": 2.64,
+      "mean_latency_seconds": 1.613769,
+      "n_paired": 50,
+      "delta_exact_match": -0.02,
+      "delta_token_f1": -0.024214
+    },
+    "Datatype Noise": {
+      "n": 50,
+      "exact_match": 0.52,
+      "token_f1": 0.692635,
+      "mean_context_tokens": 280.7,
+      "mean_answer_tokens": 2.72,
+      "mean_latency_seconds": 1.587815,
+      "n_paired": 50,
+      "delta_exact_match": -0.08,
+      "delta_token_f1": -0.056087
+    },
+    "Illegal-Sentence Noise": {
+      "n": 50,
+      "exact_match": 0.58,
+      "token_f1": 0.740507,
+      "mean_context_tokens": 163.52,
+      "mean_answer_tokens": 3.14,
+      "mean_latency_seconds": 1.599466,
+      "n_paired": 50,
+      "delta_exact_match": -0.02,
+      "delta_token_f1": -0.008214
+    },
+    "Counterfactual Noise": {
+      "n": 50,
+      "exact_match": 0.1,
+      "token_f1": 0.215509,
+      "mean_context_tokens": 168.6,
+      "mean_answer_tokens": 2.18,
+      "mean_latency_seconds": 4.615852,
+      "n_paired": 50,
+      "delta_exact_match": -0.5,
+      "delta_token_f1": -0.533212
+    },
+    "Supportive Noise": {
+      "n": 50,
+      "exact_match": 0.56,
+      "token_f1": 0.73615,
+      "mean_context_tokens": 234.74,
+      "mean_answer_tokens": 2.38,
+      "mean_latency_seconds": 4.26329,
+      "n_paired": 50,
+      "delta_exact_match": -0.04,
+      "delta_token_f1": -0.012571
+    },
+    "Orthographic Noise": {
+      "n": 50,
+      "exact_match": 0.56,
+      "token_f1": 0.685944,
+      "mean_context_tokens": 256.3,
+      "mean_answer_tokens": 2.6,
+      "mean_latency_seconds": 1.624171,
+      "n_paired": 50,
+      "delta_exact_match": -0.04,
+      "delta_token_f1": -0.062777
+    }
+  },
+  "interactions": {}
+}

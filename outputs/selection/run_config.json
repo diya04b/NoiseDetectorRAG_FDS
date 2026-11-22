@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "split": "test",
+  "classification_path": "data/processed/classification.jsonl",
+  "predictions_path": "outputs/detector/test_predictions.jsonl",
+  "checkpoint_dir": "checkpoints/detector",
+  "output_dir": "outputs/selection",
+  "pool": "same_question",
+  "retrieve_k": 7,
+  "final_k": null,
+  "keep_labels": [
+    "Relevant",
+    "Semantic Noise",
+    "Datatype Noise",
+    "Illegal-Sentence Noise"
+  ],
+  "keep_at_least": 1,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "max_length": 512,
+  "eval_batch_size": 8
+}

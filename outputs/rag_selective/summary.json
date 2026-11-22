@@ -1,0 +1,64 @@
+{
+  "reader": "extractive",
+  "model_name": "deepset/roberta-base-squad2",
+  "split": "test",
+  "n_questions": 50,
+  "n_answers": 150,
+  "keep_labels": [
+    "Relevant",
+    "Semantic Noise",
+    "Datatype Noise",
+    "Illegal-Sentence Noise"
+  ],
+  "bottom_labels": [
+    "Semantic Noise",
+    "Datatype Noise",
+    "Illegal-Sentence Noise"
+  ],
+  "harmful_labels": [
+    "Counterfactual Noise",
+    "Supportive Noise",
+    "Orthographic Noise"
+  ],
+  "conditions": {
+    "retrieved": {
+      "n": 50,
+      "exact_match": 0.22,
+      "token_f1": 0.326057,
+      "mean_context_tokens": 670.84,
+      "mean_latency_seconds": 4.543278,
+      "mean_passages": 7.0,
+      "relevant_first_rate": 0.18,
+      "mean_harmful_kept": 3.0,
+      "mean_beneficial_kept": 3.0,
+      "delta_exact_match_vs_retrieved": 0.0,
+      "delta_token_f1_vs_retrieved": 0.0
+    },
+    "detector_selective": {
+      "n": 50,
+      "exact_match": 0.62,
+      "token_f1": 0.76146,
+      "mean_context_tokens": 417.36,
+      "mean_latency_seconds": 1.51709,
+      "mean_passages": 4.02,
+      "relevant_first_rate": 0.92,
+      "mean_harmful_kept": 0.1,
+      "mean_beneficial_kept": 2.96,
+      "delta_exact_match_vs_retrieved": 0.4,
+      "delta_token_f1_vs_retrieved": 0.435402
+    },
+    "clean": {
+      "n": 50,
+      "exact_match": 0.6,
+      "token_f1": 0.748722,
+      "mean_context_tokens": 133.52,
+      "mean_latency_seconds": 1.519993,
+      "mean_passages": 1.0,
+      "relevant_first_rate": 1.0,
+      "mean_harmful_kept": 0.0,
+      "mean_beneficial_kept": 0.0,
+      "delta_exact_match_vs_retrieved": 0.38,
+      "delta_token_f1_vs_retrieved": 0.422664
+    }
+  }
+}

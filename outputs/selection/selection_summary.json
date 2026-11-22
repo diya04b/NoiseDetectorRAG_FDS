@@ -1,0 +1,167 @@
+{
+  "remove": {
+    "n_questions": 100,
+    "n_kept": 251,
+    "mean_kept": 2.51,
+    "fallback_questions": 50,
+    "relevant_kept": 48,
+    "relevant_retrieved": 50,
+    "relevant_retention": 0.96,
+    "noise_removed": 147,
+    "noise_retrieved": 350,
+    "noise_rejection": 0.42,
+    "questions_with_gold_relevant": 50,
+    "relevant_at_rank_1": 38,
+    "relevant_at_rank_1_rate": 0.76,
+    "kept_by_gold_label": {
+      "Relevant": 48,
+      "Semantic Noise": 48,
+      "Datatype Noise": 50,
+      "Illegal-Sentence Noise": 50,
+      "Counterfactual Noise": 0,
+      "Supportive Noise": 5,
+      "Orthographic Noise": 0,
+      "Prior Noise": 50
+    },
+    "removed_by_gold_label": {
+      "Relevant": 2,
+      "Semantic Noise": 2,
+      "Datatype Noise": 0,
+      "Illegal-Sentence Noise": 0,
+      "Counterfactual Noise": 50,
+      "Supportive Noise": 45,
+      "Orthographic Noise": 50,
+      "Prior Noise": 0
+    },
+    "kept_by_predicted_label": {
+      "Relevant": 52,
+      "Semantic Noise": 50,
+      "Datatype Noise": 49,
+      "Illegal-Sentence Noise": 50,
+      "Counterfactual Noise": 0,
+      "Supportive Noise": 0,
+      "Orthographic Noise": 0,
+      "Prior Noise": 50
+    },
+    "removed_by_predicted_label": {
+      "Relevant": 0,
+      "Semantic Noise": 0,
+      "Datatype Noise": 0,
+      "Illegal-Sentence Noise": 0,
+      "Counterfactual Noise": 54,
+      "Supportive Noise": 45,
+      "Orthographic Noise": 50,
+      "Prior Noise": 0
+    }
+  },
+  "rerank": {
+    "n_questions": 100,
+    "n_kept": 400,
+    "mean_kept": 4.0,
+    "fallback_questions": 0,
+    "relevant_kept": 50,
+    "relevant_retrieved": 50,
+    "relevant_retention": 1.0,
+    "noise_removed": 0,
+    "noise_retrieved": 350,
+    "noise_rejection": 0.0,
+    "questions_with_gold_relevant": 50,
+    "relevant_at_rank_1": 47,
+    "relevant_at_rank_1_rate": 0.94,
+    "kept_by_gold_label": {
+      "Relevant": 50,
+      "Semantic Noise": 50,
+      "Datatype Noise": 50,
+      "Illegal-Sentence Noise": 50,
+      "Counterfactual Noise": 50,
+      "Supportive Noise": 50,
+      "Orthographic Noise": 50,
+      "Prior Noise": 50
+    },
+    "removed_by_gold_label": {
+      "Relevant": 0,
+      "Semantic Noise": 0,
+      "Datatype Noise": 0,
+      "Illegal-Sentence Noise": 0,
+      "Counterfactual Noise": 0,
+      "Supportive Noise": 0,
+      "Orthographic Noise": 0,
+      "Prior Noise": 0
+    },
+    "kept_by_predicted_label": {
+      "Relevant": 52,
+      "Semantic Noise": 50,
+      "Datatype Noise": 49,
+      "Illegal-Sentence Noise": 50,
+      "Counterfactual Noise": 54,
+      "Supportive Noise": 45,
+      "Orthographic Noise": 50,
+      "Prior Noise": 50
+    },
+    "removed_by_predicted_label": {
+      "Relevant": 0,
+      "Semantic Noise": 0,
+      "Datatype Noise": 0,
+      "Illegal-Sentence Noise": 0,
+      "Counterfactual Noise": 0,
+      "Supportive Noise": 0,
+      "Orthographic Noise": 0,
+      "Prior Noise": 0
+    }
+  },
+  "final": {
+    "n_questions": 100,
+    "n_kept": 251,
+    "mean_kept": 2.51,
+    "fallback_questions": 50,
+    "relevant_kept": 48,
+    "relevant_retrieved": 50,
+    "relevant_retention": 0.96,
+    "noise_removed": 147,
+    "noise_retrieved": 350,
+    "noise_rejection": 0.42,
+    "questions_with_gold_relevant": 50,
+    "relevant_at_rank_1": 46,
+    "relevant_at_rank_1_rate": 0.92,
+    "kept_by_gold_label": {
+      "Relevant": 48,
+      "Semantic Noise": 48,
+      "Datatype Noise": 50,
+      "Illegal-Sentence Noise": 50,
+      "Counterfactual Noise": 0,
+      "Supportive Noise": 5,
+      "Orthographic Noise": 0,
+      "Prior Noise": 50
+    },
+    "removed_by_gold_label": {
+      "Relevant": 2,
+      "Semantic Noise": 2,
+      "Datatype Noise": 0,
+      "Illegal-Sentence Noise": 0,
+      "Counterfactual Noise": 50,
+      "Supportive Noise": 45,
+      "Orthographic Noise": 50,
+      "Prior Noise": 0
+    },
+    "kept_by_predicted_label": {
+      "Relevant": 52,
+      "Semantic Noise": 50,
+      "Datatype Noise": 49,
+      "Illegal-Sentence Noise": 50,
+      "Counterfactual Noise": 0,
+      "Supportive Noise": 0,
+      "Orthographic Noise": 0,
+      "Prior Noise": 50
+    },
+    "removed_by_predicted_label": {
+      "Relevant": 0,
+      "Semantic Noise": 0,
+      "Datatype Noise": 0,
+      "Illegal-Sentence Noise": 0,
+      "Counterfactual Noise": 54,
+      "Supportive Noise": 45,
+      "Orthographic Noise": 50,
+      "Prior Noise": 0
+    }
+  }
+}

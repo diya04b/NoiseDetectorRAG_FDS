@@ -1,0 +1,58 @@
+[
+  {
+    "label": "Relevant",
+    "precision": 0.923077,
+    "recall": 0.96,
+    "f1": 0.941176,
+    "support": 50
+  },
+  {
+    "label": "Semantic Noise",
+    "precision": 0.96,
+    "recall": 0.96,
+    "f1": 0.96,
+    "support": 50
+  },
+  {
+    "label": "Datatype Noise",
+    "precision": 1.0,
+    "recall": 0.98,
+    "f1": 0.989899,
+    "support": 50
+  },
+  {
+    "label": "Illegal-Sentence Noise",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 50
+  },
+  {
+    "label": "Counterfactual Noise",
+    "precision": 0.925926,
+    "recall": 1.0,
+    "f1": 0.961538,
+    "support": 50
+  },
+  {
+    "label": "Supportive Noise",
+    "precision": 0.977778,
+    "recall": 0.88,
+    "f1": 0.926316,
+    "support": 50
+  },
+  {
+    "label": "Orthographic Noise",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 50
+  },
+  {
+    "label": "Prior Noise",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 50
+  }
+]

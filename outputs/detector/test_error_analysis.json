@@ -1,0 +1,122 @@
+{
+  "split": "test",
+  "n_examples": 400,
+  "n_correct": 389,
+  "named_confusions": [
+    {
+      "true_label": "Semantic Noise",
+      "predicted_label": "Supportive Noise",
+      "count": 1,
+      "support": 50,
+      "rate": 0.02
+    },
+    {
+      "true_label": "Supportive Noise",
+      "predicted_label": "Semantic Noise",
+      "count": 2,
+      "support": 50,
+      "rate": 0.04
+    },
+    {
+      "true_label": "Counterfactual Noise",
+      "predicted_label": "Prior Noise",
+      "count": 0,
+      "support": 50,
+      "rate": 0.0
+    },
+    {
+      "true_label": "Prior Noise",
+      "predicted_label": "Counterfactual Noise",
+      "count": 0,
+      "support": 50,
+      "rate": 0.0
+    }
+  ],
+  "top_confusions": [
+    {
+      "true_label": "Supportive Noise",
+      "predicted_label": "Relevant",
+      "count": 3
+    },
+    {
+      "true_label": "Relevant",
+      "predicted_label": "Counterfactual Noise",
+      "count": 2
+    },
+    {
+      "true_label": "Supportive Noise",
+      "predicted_label": "Semantic Noise",
+      "count": 2
+    },
+    {
+      "true_label": "Datatype Noise",
+      "predicted_label": "Relevant",
+      "count": 1
+    },
+    {
+      "true_label": "Semantic Noise",
+      "predicted_label": "Counterfactual Noise",
+      "count": 1
+    },
+    {
+      "true_label": "Semantic Noise",
+      "predicted_label": "Supportive Noise",
+      "count": 1
+    },
+    {
+      "true_label": "Supportive Noise",
+      "predicted_label": "Counterfactual Noise",
+      "count": 1
+    }
+  ],
+  "per_class": [
+    {
+      "label": "Relevant",
+      "support": 50,
+      "n_correct": 48,
+      "n_wrong": 2
+    },
+    {
+      "label": "Semantic Noise",
+      "support": 50,
+      "n_correct": 48,
+      "n_wrong": 2
+    },
+    {
+      "label": "Datatype Noise",
+      "support": 50,
+      "n_correct": 49,
+      "n_wrong": 1
+    },
+    {
+      "label": "Illegal-Sentence Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Counterfactual Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Supportive Noise",
+      "support": 50,
+      "n_correct": 44,
+      "n_wrong": 6
+    },
+    {
+      "label": "Orthographic Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    },
+    {
+      "label": "Prior Noise",
+      "support": 50,
+      "n_correct": 50,
+      "n_wrong": 0
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "split": "test",
+  "labels": [
+    "Relevant",
+    "Semantic Noise",
+    "Datatype Noise",
+    "Illegal-Sentence Noise",
+    "Counterfactual Noise",
+    "Supportive Noise",
+    "Orthographic Noise",
+    "Prior Noise"
+  ],
+  "rows": "true class",
+  "columns": "predicted class",
+  "matrix": [
+    [
+      48,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      48,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      49,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      50,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      50,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      2,
+      0,
+      0,
+      1,
+      44,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      50,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      50
+    ]
+  ]
+}

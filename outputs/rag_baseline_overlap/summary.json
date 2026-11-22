@@ -1,0 +1,87 @@
+{
+  "reader": "overlap",
+  "model_name": "overlap",
+  "split": "test",
+  "noise_position": "after",
+  "n_questions": 50,
+  "n_questions_with_clean": 50,
+  "n_questions_without_clean_skipped": 50,
+  "n_answers": 350,
+  "conditions": {
+    "clean": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.100897,
+      "mean_context_tokens": 133.52,
+      "mean_answer_tokens": 25.3,
+      "mean_latency_seconds": 4.4e-05
+    },
+    "Semantic Noise": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.098039,
+      "mean_context_tokens": 234.68,
+      "mean_answer_tokens": 26.0,
+      "mean_latency_seconds": 6.6e-05,
+      "n_paired": 50,
+      "delta_exact_match": 0.0,
+      "delta_token_f1": -0.002857
+    },
+    "Datatype Noise": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.101871,
+      "mean_context_tokens": 280.7,
+      "mean_answer_tokens": 24.98,
+      "mean_latency_seconds": 7.1e-05,
+      "n_paired": 50,
+      "delta_exact_match": 0.0,
+      "delta_token_f1": 0.000974
+    },
+    "Illegal-Sentence Noise": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.100897,
+      "mean_context_tokens": 163.52,
+      "mean_answer_tokens": 25.3,
+      "mean_latency_seconds": 3.7e-05,
+      "n_paired": 50,
+      "delta_exact_match": 0.0,
+      "delta_token_f1": 0.0
+    },
+    "Counterfactual Noise": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.073421,
+      "mean_context_tokens": 168.6,
+      "mean_answer_tokens": 23.06,
+      "mean_latency_seconds": 4e-05,
+      "n_paired": 50,
+      "delta_exact_match": 0.0,
+      "delta_token_f1": -0.027476
+    },
+    "Supportive Noise": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.087006,
+      "mean_context_tokens": 234.74,
+      "mean_answer_tokens": 25.76,
+      "mean_latency_seconds": 6e-05,
+      "n_paired": 50,
+      "delta_exact_match": 0.0,
+      "delta_token_f1": -0.01389
+    },
+    "Orthographic Noise": {
+      "n": 50,
+      "exact_match": 0.0,
+      "token_f1": 0.100897,
+      "mean_context_tokens": 256.3,
+      "mean_answer_tokens": 25.3,
+      "mean_latency_seconds": 6.5e-05,
+      "n_paired": 50,
+      "delta_exact_match": 0.0,
+      "delta_token_f1": 0.0
+    }
+  },
+  "interactions": {}
+}
